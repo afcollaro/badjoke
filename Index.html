@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Joke - Banda de Rock</title>
+    <link rel="stylesheet" href="style_inicio.css">
+</head>
+<body>
+    <!-- Vídeo de fundo -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="video/badjokevideo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <img src="imagens/logofundotransparente.png" alt="Logo da Banda Bad Joke" class="logo">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#loja">Loja</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Energia. Atitude. Rock de Verdade.</h2>
+            <p>Acompanhe a Bad Joke nas melhores casas de show!</p>
+        </div>
+    </section>
+
+    <section id="agenda" class="section agenda">
+        <h2>Próximos Shows</h2>
+        <ul class="events">
+            <li><strong>25/11/2024:</strong> Cerveja Azul - São Paulo, SP</li>
+            <li><strong>10/12/2024:</strong> Grunge Pub - Campinas, SP</li>
+        </ul>
+    </section> 
+	
+	<section id="sobre" class="section sobre">
+    <h2>A Banda</h2>
+    <div class="sobre-conteudo">
+        <div class="texto">
+            <p>A Bad Joke é uma banda que vive e respira o rock. <br> Formada por músicos apaixonados pela energia e a atitude do gênero, a banda se destaca por suas poderosas versões de covers de bandas tanto nacionais quanto internacionais. Com uma sonoridade cheia de peso e emoção, a Bad Joke traz sua própria identidade a cada música, transformando clássicos do rock em experiências únicas para o público.
+				<br>Influenciada por ícones do rock mundial, como Nirvana, Metallica e Halestorm, além de lendas brasileiras como Pitty, CPM22, Raimundos, a Bad Joke mistura os melhores elementos do grunge, hard rock e rock alternativo. A banda não apenas reproduz as músicas que marcaram a história do rock, mas também as interpreta com sua própria essência, criando uma conexão intensa com os fãs.
+				Formada por músicos com vasta experiência no cenário musical, a Bad Joke tem conquistado espaços e leva ao público uma performance cheia de energia e autenticidade.<br> Se você é fã de boas músicas e de um show com muita atitude, a Bad Joke é a banda que você precisa conhecer!</p>
+            <br>
+			<p>Formada por:</p>
+            <ul>
+                <li><strong>Vocalista:</strong> Carla Mendes</li>
+                <li><strong>Guitarrista:</strong> Alexandre Collaro</li>
+                <li><strong>Bassista:</strong> Matheus</li>
+				<li><strong>Guitarrista:</strong> Guilherme</li>
+                <li><strong>Baterista:</strong> Vinicius</li>
+            </ul>
+        </div>
+        <div class="imagem">
+            <img src="imagens/bandabadjoke1.jpg" alt="Foto da banda">
+        </div>
+    </div>
+</section>
+
+
+    <section id="galeria" class="section galeria">
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+            <img src="imagens/shows.jpg" alt="Foto do show 1">
+            <img src="imagens/shows.jpg" alt="Foto do show 2">
+        </div>
+    </section>
+
+    <section id="loja" class="section loja">
+        <h2>Produtos da Loja Oficial</h2>
+		<p>Confira nossos produtos oficiais e leve o espírito do rock para onde você for! </p>
+        <div class="produtos">
+            <div class="produto">
+                <img src="imagens/mochilabadjoke.jpg" alt="Mochila Bad Joke">
+                <h3>Mochila Bad Joke</h3>
+                <p>Confira</p>
+                <button><a href="loja.html">Comprar</a></button>
+            </div>
+			<div class="produto">
+                <img src="imagens/canecabadjoke.jpg" alt="Caneca Bad Joke">
+                <h3>Caneca Bad Joke</h3>
+                <p>Confira</p>
+                <button><a href="loja.html">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <img src="imagens/camisetabadjoke.jpg" alt="Camiseta Bad Joke">
+                <h3>Camiseta Bad Joke</h3>
+                <p>Confira</p>
+                <button><a href="loja.html">Comprar</a></button>
+            </div>
+			<div class="produto">
+                <img src="imagens/adesivobadjoke.jpg" alt="Adesivo Bad Joke">
+                <h3>Mochila Bad Joke</h3>
+                <p>Confira</p>
+                <button><a href="loja.html">Comprar</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+<h2>Contato</h2>
+<p>Entre em contato para shows e parcerias pelo WhatsApp!</p>
+<form id="form-contato">
+    <input type="text" id="nome" placeholder="Seu Nome" required><br>
+    <input type="email" id="email" placeholder="Seu Email" required><br>
+    <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea><br>
+    <button type="button" id="enviar-mensagem">Enviar Mensagem</button>
+</form>
+
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Bad Joke. Todos os direitos reservados.</p>
+    </footer>
+<script>
+    // Espera o carregamento do DOM
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('enviar-mensagem').addEventListener('click', function () {
+            // Obtém os valores dos campos
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            // Verifica se algum campo está vazio
+            if (!nome || !email || !mensagem) {
+                alert('Por favor, preencha todos os campos antes de enviar.');
+                return;  // Se algum campo estiver vazio, a função é interrompida
+            }
+
+            // Número de WhatsApp para onde será enviada a mensagem
+            const telefone = '5511989628831';  // Substitua pelo número correto (com código de país e DDD)
+
+            // Cria a mensagem no formato desejado para o WhatsApp
+            const texto = `Olá, meu nome é ${encodeURIComponent(nome)}!%0AEmail: ${encodeURIComponent(email)}%0AMensagem: ${encodeURIComponent(mensagem)}`;
+
+            // Cria a URL do WhatsApp com os dados do formulário
+            const urlWhatsApp = `https://wa.me/${telefone}?text=${texto}`;
+
+            // Abre o WhatsApp em uma nova aba
+            window.open(urlWhatsApp, '_blank');
+        });
+    });
+</script>
+
+</body>
+</html>
