@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Bad Joke</title>
+  <link rel="stylesheet" href="style_loja.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <h1>Loja Bad Joke</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="javascript:void(0);" id="view-cart">Carrinho (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Inicial -->
+  <section id="home" class="banner">
+    <h2>Bem-vindo à loja oficial da Banda Bad Joke</h2>
+    <p>Aqui você encontra produtos exclusivos da banda. Confira!</p>
+  </section>
+
+  <!-- Produtos -->
+  <section id="products">
+    <h2>Produtos</h2>
+     <div class="product-list">
+      <div class="product-item">
+        <img src="imagens/camisetabadjoke.jpg" alt="Camiseta Bad Joke" class="product-image" data-image="imagens/camisetabadjoke.jpg">
+        <h3>Camiseta Bad Joke</h3>
+        <p>R$ 79,90</p>
+        <button class="add-to-cart" data-product="Camiseta Bad Joke" data-price="79.90">Adicionar ao carrinho</button>
+      </div>
+      <div class="product-item">
+        <img src="imagens/Canecabadjoke.jpg" alt="Caneca Bad Joke" class="product-image" data-image="imagens/Canecabadjoke.jpg">
+        <h3>CD Bad Joke</h3>
+        <p>R$ 49,90</p>
+        <button class="add-to-cart" data-product="Caneca Bad Joke" data-price="49.90">Adicionar ao carrinho</button>
+      </div>
+      <div class="product-item">
+        <img src="imagens/adesivobadjoke.jpg" alt="Adesivo Bad Joke" class="product-image" data-image="imagens/adesivobadjoke.jpg">
+        <h3>Poster Bad Joke</h3>
+        <p>R$ 19,90</p>
+        <button class="add-to-cart" data-product="Adesivo Bad Joke" data-price="19.90">Adicionar ao carrinho</button>
+      </div>
+		   <div class="product-item">
+        <img src="imagens/mochilabadjoke.jpg" alt="Mochila Bad Joke" class="product-image" data-image="imagens/Mochilabadjoke.jpg">
+        <h3>Camiseta Bad Joke</h3>
+        <p>R$ 79,90</p>
+        <button class="add-to-cart" data-product="Mochila Bad Joke" data-price="79.90">Adicionar ao carrinho</button>
+	   </div>
+	  </div>
+  </section>
+
+  <!-- Carrinho de Compras -->
+  <section id="cart" class="cart-container">
+    <div class="cart-content">
+      <h2>Carrinho de Compras</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: R$ <span id="cart-total">0.00</span></p>
+      <button id="checkout">Finalizar Compra</button>
+      <button id="close-cart">Fechar Carrinho</button>
+    </div>
+  </section>
+
+  <!-- Modal de Imagem Maior -->
+  <div id="image-modal" class="modal">
+    <span id="close-modal" class="close">&times;</span>
+    <img id="modal-image" src="" alt="Imagem do Produto">
+  </div>
+
+ <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Loja Bad Joke. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
